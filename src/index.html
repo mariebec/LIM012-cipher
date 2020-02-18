@@ -4,11 +4,47 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Noto+Sans&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div></div>
+      <h1>SafeText</h1>
+    </header>
+    <main class="container">
+      <p>Encripta tus mensajes</p>
+      <!-- Input para ingresar el número de desplazamiento-->
+      <div class="firstBox">
+        <div>
+          <label for="displacementValue">
+            <input type="number" class="numberBox" id="displacementValue" min="0" max="999">CÓDIGO
+          </label>
+          <div class="tooltip"><span>¿Qué es esto?</span>
+            <div class="tooltipText">
+              <p>Si quieres cifrar: elige un número e ingrésalo a la casilla,  recuérdalo, porque deberás darlo al destinatario de tu mensaje para que pueda descifrar el texto.</p>
+              <p>Si necesitas descifrar: Ingresa a la casilla el número que te ha dado el emisor del mensaje cifrado.</p>
+            </div>
+          </div>
+        </div>
+        <button type="button" id="delete">Borrar</button>
+      </div>
+      <!--Textarea para ingresar el texto -->
+      <div class="secondBox">
+        <textarea class="textBox" id="inputText" placeholder="Ingrese el texto aqui" cols="20" rows="5"></textarea>
+        <button type="button" id="encode">Cifrar</button>
+        <button type="button" id="decode">Descifrar</button>
+      </div>
+      <!--Textarea que muestra el resultado -->
+      <div class="lastbox">
+        <p id="outputTitle">Resultado</p>
+        <textarea class="textBox" id="outputText" cols="20" rows="5" readonly disabled></textarea>
+        <button type="button" id="copy">Copiar</button>
+      </div>
+      <!-- <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Saber más</a> -->
+    </main>
+    <footer>
+      <p>¿Quieres saber cómo se encriptan los mensajes? <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Saber más</a>.</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
