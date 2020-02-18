@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+h1{
+    width: 40%;
+    margin: 0.4em auto;
+    font-family: 'Carter One', cursive;
+    color: #A62D2D;
+    font-size: 2.1em;
+}
+
+header div{
+    height: 8px;
+    background-color:#49868C;
+}
+
+input, textarea{
+    border-radius: 2px;
+    border: 1px solid #49868C   ;
+}
+
+.textBox{
+    width: 100%;
+    margin: 0.5em 0 0 0;
+    /* box-sizing: border-box;
+    overflow: auto; */
+    font-size: 1.2em;
+}
+
+.container{
+    background-color: #FFFFFF;
+    width: 40%;
+    margin: auto;
+    padding: 1.8em 0;
+    border-radius: 5px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container > p{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1em;
+    color: #49868C;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.firstBox {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5% auto 0 auto;
+}
+
+.firstBox > div {
+    width: 80%;
+    margin-bottom: 3%;
+}
+
+button{
+    height: 30px;
+}
+
+.firstBox label{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #575959;
+}
+
+.firstBox p{
+    font-size: 0.9em;
+    margin-top: 2%;
+    color:#575959;
+}
+
+.numberBox{
+    width: 45px;
+    height: 22px;
+    margin-right: 1%;
+    text-align: center;
+    font-size: 0.7em;
+    color: #575959;
+}
+
+.secondBox{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.secondBox button{
+    width: 49%;
+    font-size: 1em;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #A62D2D;
+    color: #FFFFFF;
+    border: 2px solid  #A62D2D;
+    margin: 10px 0 2px 2px;
+}
+
+.secondBox button:hover{
+    background-color: rgb(126, 31, 31);
+    border: 2px solid #A62D2D;
+    font-weight: bold;
+}
+
+.lastbox{
+    width: 80%;
+    margin: auto;
+    text-align: right;
+}
+
+.lastbox p{
+    color: #49868C;
+    margin-top: 3%;
+    text-align: left;
+}
+
+.lastbox .textBox{
+    margin-bottom: 0.5em;
+}
+
+.firstBox button, .lastbox button{
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #49868C;
+    border: 2px solid  #49868C;
+}
+
+.firstBox button:hover, .lastbox button:hover{
+    background-color: rgb(53, 104, 109);
+}
+
+footer p{
+    width: 38%;
+    margin: 0.5em auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+    color: #575959;
+}
+
+a{
+    color: inherit;
+}
+
+.tooltip{
+    position: relative;
+    margin-top: 2%;
+}
+
+.tooltip span{
+    font-size: 0.8em;
+    color:#575959;
+    border-bottom: 1px dotted #575959;
+}
+
+.tooltip .tooltipText{
+    visibility: hidden;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    left: 90px;
+    background-color: #A62D2D;
+    opacity: 95%;
+    border-radius: 3px;
+    text-align: justify;
+    padding: 1em;
+}
+
+.tooltip .tooltipText::after {
+    content: "";
+    position: absolute;
+    top: 4%;
+    left: 0%;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #A62D2D transparent transparent;
+  }
+
+.tooltipText p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+}
+
+.tooltip:hover .tooltipText{
+    visibility: visible;
+}
+
+.jstext{
+    position:fixed; 
+    z-index: 1; 
+    top: 50%;
+    left: 48%;
+    margin-left: -70px;
+    padding: 1%; 
+    background: #D9B166;
+    border-radius: 5px;
+    font-family: 'Noto Sans', sans-serif;
+}

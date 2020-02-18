@@ -1,6 +1,6 @@
-# Cifrado César
+# Título: Mensajes encriptados
 
-## Índice
+<!-- ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
@@ -11,51 +11,31 @@
 * [7. Consideraciones técnicas](#7-consideraciones-técnicas)
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
 
-***
+*** -->
 
-## 1. Preámbulo
+## 1. Descripción
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
+Se trata de una aplicación web que permite a los usuarios encriptar sus mensajes mediante el método de Cifrado César, también conocido como cifrado por desplazamiento.
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+## Usuarios
 
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
-un tipo de cifrado por sustitución, es decir que cada letra del texto original
-es reemplazada por otra que se encuentra un número fijo de posiciones
-(desplazamiento) más adelante en el mismo alfabeto.
+Los usuarios son parejas jóvenes y adultas de 15 a 25 años aproximadamente, que usan diariamente las redes sociales e internet y sienten la necesidad de tener mayor privacidad en sus conversaciones.
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+La web brinda un entorno simple donde se puede cifrar o descifrar textos fácilmente. No se necesita crear un usuario.
 
-* La letra A se cifra como D.
-* La palabra CASA se cifra como FDVD.
-* Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+## 2. Prototipos
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
+[imagen]
 
-## 2. Resumen del proyecto
+Feedback: 
+No se entiende qué es el número de desplazamiento
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación
-web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un
-texto indicando un desplazamiento específico de caracteres (_offset_).
+[imagen]
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+Feedback:
+- Sería bueno que haya un botón para borrar todo, así,  una vez descifrado el mensaje, se pueda escribir uno nuevo para encriptar y enviar.
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+- La gente no lee, directamente va al botón de cifrar sin poner el número de desplazamiento, se podría resalta más esa parte.
 
 ## 3. Objetivos de aprendizaje
 
