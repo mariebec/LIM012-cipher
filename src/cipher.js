@@ -1,5 +1,5 @@
 const cipher = {
-  encode(offset, string){
+  encode:(offset, string) => {
     let string2 = '';
     //Recorrer el string
     for(let i=0; i<string.length; i++){ 
@@ -18,7 +18,7 @@ const cipher = {
     }
     return string2;
   },
-  decode(offset, string){
+  decode:(offset, string) => {
     let string2 = '';
     //Recorrer el string
     for(let i=0; i<string.length; i++){ 
