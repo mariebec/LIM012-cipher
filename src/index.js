@@ -40,23 +40,22 @@ deleteButton.addEventListener('click', () => {
 //Evento del botón copiar
 const copy = document.getElementById('copy');
 copy.addEventListener('click', () => {
-    //crear una variale que contendrá un cuadro de texto oculto
+    //Copiando el contenido del input
     const aux = document.createElement('input');
-    //Asignarle al input nuevo el valor del contenido del área de texto
     aux.setAttribute('value', outputText.value);
-    //Añadir el campo a la página
     document.body.appendChild(aux);
-    //Seleccionar el contenido del campo
+    //Se selecciona el contenido del campo
     aux.select();
     //Copiando el texto seleccionado
     document.execCommand('copy');
-    //Eliminar el cuadro de texto auxiliar
     document.body.removeChild(aux);
-    //Avisar al usuario que se ha copiado el texto
-    const aviso = document.createElement('div');
-    aviso.setAttribute('id', 'aviso');
-    aviso.classList.add('jstext');
-    aviso.innerHTML = 'Se ha copiado el texto';
-    document.body.appendChild(aviso);
-    document.load = setTimeout('document.body.removeChild(aviso)', 1500);
+    //Avisando al usuario que se ha copiado el texto
+    const notification = document.createElement('div');
+    notification.setAttribute('id', 'notification');
+    notification.classList.add('jstext');
+    //Insertando al DOM el mensaje
+    notification.innerHTML = 'Se ha copiado el texto';
+    document.body.appendChild(notification);
+    //Se muestra el div en el documento durante 1.5segs y se elimina del documento
+    document.load = setTimeout('document.body.removeChild(notification)', 1200);
 })

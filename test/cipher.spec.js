@@ -14,12 +14,12 @@ describe('cipher', () => {
       expect(typeof cipher.encode).toBe('function');
     });
 
-    // it('debería arrojar TypeError cuando se invoca con tipos de argumento incorrectos', () => {
-    //   expect(() => cipher.encode()).toThrow(TypeError);
-    //   expect(() => cipher.encode(0)).toThrow(TypeError);
-    //   expect(() => cipher.encode(null, [])).toThrow(TypeError);
-    //   expect(() => cipher.encode(0, 0)).toThrow(TypeError);
-    // });
+    it('debería arrojar TypeError cuando se invoca con tipos de argumento incorrectos', () => {
+      expect(() => cipher.encode()).toThrow(TypeError);
+      expect(() => cipher.encode(0)).toThrow(TypeError);
+      expect(() => cipher.encode(null, [])).toThrow(TypeError);
+      expect(() => cipher.encode(0, 0)).toThrow(TypeError);
+    });
 
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
       expect(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
@@ -50,12 +50,12 @@ describe('cipher', () => {
       expect(typeof cipher.decode).toBe('function');
     });
 
-    // it('debería arrojar TypeError cuando se invoca con tipos de argumento incorrectos', () => {
-    //   expect(() => cipher.encode()).toThrow(TypeError);
-    //   expect(() => cipher.encode(0)).toThrow(TypeError);
-    //   expect(() => cipher.encode(null, [])).toThrow(TypeError);
-    //   expect(() => cipher.encode(0, 0)).toThrow(TypeError);
-    // });
+    it('debería arrojar TypeError cuando se invoca con tipos de argumento incorrectos', () => {
+      expect(() => cipher.encode()).toThrow(TypeError);
+      expect(() => cipher.encode(0)).toThrow(TypeError);
+      expect(() => cipher.encode(null, [])).toThrow(TypeError);
+      expect(() => cipher.encode(0, 0)).toThrow(TypeError);
+    });
 
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
       expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');

@@ -26,8 +26,7 @@ input, textarea{
 .textBox{
     width: 100%;
     margin: 0.5em 0 0 0;
-    /* box-sizing: border-box;
-    overflow: auto; */
+    overflow: auto;
     font-size: 1.2em;
 }
 
@@ -96,7 +95,7 @@ button{
 }
 
 .secondBox button{
-    width: 49%;
+    width: 15.2vw;
     font-size: 1em;
     box-sizing: border-box;
     border-radius: 4px;
@@ -155,6 +154,7 @@ a{
 .tooltip{
     position: relative;
     margin-top: 2%;
+    display: inline-block;
 }
 
 .tooltip span{
@@ -167,7 +167,7 @@ a{
     visibility: hidden;
     position: absolute;
     display: inline-block;
-    width: 100%;
+    width: 320px;
     left: 90px;
     background-color: #A62D2D;
     opacity: 95%;
