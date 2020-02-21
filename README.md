@@ -25,7 +25,7 @@ La web brinda un entorno simple donde se puede cifrar o descifrar textos fácilm
 
 ## 2. Prototipos
 
-[imagen]
+(src/assets/sketch.jpg)
 
 Feedback: 
 No se entiende qué es el número de desplazamiento
