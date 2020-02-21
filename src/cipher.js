@@ -14,6 +14,8 @@ const cipher = {
       //Para minúsculas
       }else if(letterCode>=97 && letterCode<=122){ 
         string2 += String.fromCharCode((letterCode - 97 + offset)%26 + 97); 
+      }else if(letterCode>=48 && letterCode<=57){
+        string2 += String.fromCharCode((letterCode - 48 + offset)%10 + 48);
       }else{
         string2 += string[i];
       }
@@ -36,6 +38,8 @@ const cipher = {
       //Para minúsculas
       }else if(letterCode>=97 && letterCode<=122){
         string2 += String.fromCharCode((letterCode - 122 - offset)%26 + 122); 
+      }else if(letterCode>=48 && letterCode<=57){
+        string2 += String.fromCharCode((letterCode - 57 - offset)%10 + 57); 
       }else{
         string2 += string[i];
       }
