@@ -43,7 +43,12 @@ describe('cipher', () => {
       expect(cipher.encode(33, ' !@')).toBe(' !@');
     });
   });
+  //Soporte para números
+  it('debería retornar "3456789012" para "0123456789" con offset 33', () => {
+    expect(cipher.encode(33, '0123456789')).toBe('3456789012');
+  });
 
+  
   describe('cipher.decode', () => {
 
     it('debería ser una function', () => {
@@ -51,10 +56,10 @@ describe('cipher', () => {
     });
 
     it('debería arrojar TypeError cuando se invoca con tipos de argumento incorrectos', () => {
-      expect(() => cipher.encode()).toThrow(TypeError);
-      expect(() => cipher.encode(0)).toThrow(TypeError);
-      expect(() => cipher.encode(null, [])).toThrow(TypeError);
-      expect(() => cipher.encode(0, 0)).toThrow(TypeError);
+      expect(() => cipher.decode()).toThrow(TypeError);
+      expect(() => cipher.decode(0)).toThrow(TypeError);
+      expect(() => cipher.decode(null, [])).toThrow(TypeError);
+      expect(() => cipher.decode(0, 0)).toThrow(TypeError);
     });
 
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
@@ -80,5 +85,9 @@ describe('cipher', () => {
       expect(cipher.decode(33, ' !@')).toBe(' !@');
     });
   });
-
+  //Soporte para números
+  it('debería retornar "0123456789" para "3456789012" con offset 33', () => {
+    expect(cipher.decode(33, '3456789012')).toBe('0123456789');
+  });
+ 
 });

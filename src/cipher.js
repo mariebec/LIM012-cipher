@@ -24,9 +24,9 @@ const cipher = {
   },
 
   decode:(offset, string) => {
-    // if (offset===null || offset===0){
-    //   throw new TypeError();
-    // }
+    if (offset===null || offset===0){
+      throw new TypeError();
+    }
     let string2 = '';
     //Recorrer el string
     for(let i=0; i<string.length; i++){ 
