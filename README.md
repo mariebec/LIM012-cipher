@@ -26,9 +26,9 @@ Feedbacks:
 
 - La gente no lee, directamente va al botón de cifrar sin poner el número de desplazamiento.
 
-![Prototipo final](./src/assets/prototipofinal.jpg)
-
 ### Prototipo final
+
+![Prototipo final](./src/assets/prototipofinal.jpg)
 
 ## 3. Objetivos de aprendizaje
 
