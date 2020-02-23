@@ -5,17 +5,29 @@ body{
     background-color: rgb(224, 224, 224);
 }
 
-h1{
+.line{
+    height: 8px;
+    background-color:#49868C;
+}
+
+.name{
+    display: flex;
+    align-items: stretch;
     width: 40%;
-    margin: 0.4em auto;
+    margin: auto;
+    padding: 1em 0;
+}
+
+h1{  
+    display: inline-block;  
+    margin-right: 1%;
     font-family: 'Carter One', cursive;
     color: #A62D2D;
     font-size: 2.1em;
 }
 
-header div{
-    height: 8px;
-    background-color:#49868C;
+.logo{
+    height: 45px;
 }
 
 input, textarea{
@@ -139,7 +151,7 @@ button{
     background-color: rgb(53, 104, 109);
 }
 
-footer p{
+.finaltext p{
     width: 38%;
     margin: 0.5em auto;
     font-family: 'Noto Sans', sans-serif;
@@ -157,7 +169,7 @@ a{
     display: inline-block;
 }
 
-.tooltip span{
+.tooltip > span{
     font-size: 0.8em;
     color:#575959;
     border-bottom: 1px dotted #575959;
@@ -194,6 +206,10 @@ a{
 
 .tooltip:hover .tooltipText{
     visibility: visible;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 .jstext{

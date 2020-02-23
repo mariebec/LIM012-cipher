@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/icono.png">
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Noto+Sans&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header>
-      <div></div>
-      <h1>SafeText</h1>
+      <div class="line"></div>
+      <div class="name">
+        <h1>SafeMessage</h1><img src="assets/logo.svg" alt="logo" class="logo">
+      </div>
     </header>
     <main class="container">
       <p>Encripta tus mensajes</p>
@@ -21,8 +24,8 @@
           </label>
           <div class="tooltip"><span>¿Qué es esto?</span>
             <div class="tooltipText">
-              <p>Si quieres cifrar: elige un número e ingrésalo a la casilla,  recuérdalo, porque deberás darlo al destinatario de tu mensaje para que pueda descifrar el texto.</p>
-              <p>Si necesitas descifrar: Ingresa a la casilla el número que te ha dado el emisor del mensaje cifrado.</p>
+              <p><span class="bold">Si quieres cifrar:</span> elige un número e ingrésalo a la casilla. Este número debes dar a la persona que deberá descifrar tu mensaje.</p>
+              <p><span class="bold">Si necesitas descifrar:</span> Ingresa a la casilla el número que te ha dado el emisor del mensaje encriptado.</p>
             </div>
           </div>
         </div>
@@ -41,9 +44,9 @@
         <button type="button" id="copy">Copiar</button>
       </div>
     </main>
-    <footer>
-      <p>¿Quieres saber cómo se encriptan los mensajes? <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Saber más</a>.</p>
-    </footer>
+    <div class="finaltext">
+      <p>¿Quieres entender cómo se encriptan los mensajes? <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">Saber más</a>.</p>
+    </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
