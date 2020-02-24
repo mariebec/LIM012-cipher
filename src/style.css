@@ -57,7 +57,7 @@ input, textarea{
     margin-bottom: 1em;
     color: #49868C;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 1.5em;
 }
 
 .firstBox {
@@ -80,7 +80,7 @@ button{
 .firstBox label{
     display: flex;
     align-items: center;
-    font-size: 4vw;
+    font-size: 1.2em;
     font-weight: bold;
     color: #575959;
 }
@@ -179,7 +179,7 @@ a{
     visibility: hidden;
     position: absolute;
     display: inline-block;
-    width: 320px;
+    width: 22vw;
     left: 90px;
     background-color: #A62D2D;
     opacity: 95%;
@@ -224,9 +224,13 @@ a{
     font-family: 'Noto Sans', sans-serif;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 1000px){
     .container{
         width:90%;
+    }
+
+    .container > p{
+        font-size: 1.2em;
     }
 
     .name{
@@ -239,6 +243,10 @@ a{
 
     .logo{
         height: 37px;
+    }
+
+    .firstBox label{
+        font-size: 1.1em;
     }
 
     .finaltext p{
