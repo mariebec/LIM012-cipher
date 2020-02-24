@@ -57,7 +57,7 @@ input, textarea{
     margin-bottom: 1em;
     color: #49868C;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 3.5vh;
 }
 
 .firstBox {
@@ -80,7 +80,7 @@ button{
 .firstBox label{
     display: flex;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 3.5vh;
     font-weight: bold;
     color: #575959;
 }
@@ -222,4 +222,48 @@ a{
     background: #D9B166;
     border-radius: 5px;
     font-family: 'Noto Sans', sans-serif;
+}
+
+@media screen and (max-width: 320px){
+    .container{
+        width:90%;
+    }
+
+    .name{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 1.6em;
+    }
+
+    .logo{
+        height: 37px;
+    }
+
+    .finaltext p{
+        width: 87%;
+    }
+
+    .secondBox button{
+        width: 48%;
+    }
+
+    .tooltip .tooltipText{
+        visibility: hidden;
+        position: absolute;
+        display: inline-block;
+        width: 120px;
+        left: 90px;
+        background-color: #A62D2D;
+        opacity: 95%;
+        border-radius: 3px;
+        text-align: left;
+        padding: 1em;
+    }
+
+    .tooltipText p{
+        color: #FFFFFF;
+        font-size: 0.75em;
+    }
 }
