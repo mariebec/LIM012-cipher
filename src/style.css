@@ -224,7 +224,7 @@ a{
     font-family: 'Noto Sans', sans-serif;
 }
 
-@media screen and (min-width: 320px){
+@media screen and (max-width: 750px){
     .container{
         width:90%;
     }
@@ -253,7 +253,7 @@ a{
         visibility: hidden;
         position: absolute;
         display: inline-block;
-        width: 130px;
+        width: 30vh;
         left: 90px;
         background-color: #A62D2D;
         opacity: 95%;
