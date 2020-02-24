@@ -224,7 +224,7 @@ a{
     font-family: 'Noto Sans', sans-serif;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px){
     .container{
         width:90%;
     }
