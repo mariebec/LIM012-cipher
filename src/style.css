@@ -65,7 +65,7 @@ input, textarea{
     align-items: flex-end;
     justify-content: space-between;
     width: 80%;
-    margin: 5% auto 0 auto;
+    margin: 3% auto 0 auto;
 }
 
 .firstBox > div {
@@ -107,7 +107,7 @@ button{
 }
 
 .secondBox button{
-    width: 15.2vw;
+    width: 15.4vw;
     font-size: 1em;
     box-sizing: border-box;
     border-radius: 4px;
@@ -227,34 +227,52 @@ a{
 @media screen and (max-width: 1000px){
     .container{
         width:90%;
+        padding: 1em 0;
     }
 
     .container > p{
-        font-size: 1.2em;
+        font-size: 1.1em;
+        margin-bottom: 2%;
     }
 
     .name{
         width: 90%;
+        padding: 0.5em 0;
     }
 
     h1{
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 
     .logo{
-        height: 37px;
+        height: 30px;
     }
 
     .firstBox label{
-        font-size: 1.1em;
+        font-size: 1.0em;
+    }
+
+    textarea{
+        height: 70px;
+    }
+
+    .textBox{
+        font-size: 1em;
     }
 
     .finaltext p{
         width: 87%;
+        font-size: 0.7em;
     }
 
     .secondBox button{
         width: 48%;
+        font-size: 0.9em;
+        height: 25px;
+    }
+
+    .lastbox p{
+        font-size: 1em;
     }
 
     .tooltip .tooltipText{
